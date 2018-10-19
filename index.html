@@ -27,7 +27,10 @@ document.addEventListener('keydown', function(e) {
   }
 })
 
-     function moveDodgerRightt() {
+
+    var dodger = document.getElementById('dodger')
+    
+     function moveDodgerRight() {
   var rightNumbers = dodger.style.right.replace('px', '')
   var right = parseInt(rightNumbers, 10)
  
@@ -38,7 +41,7 @@ document.addEventListener('keydown', function(e) {
 
 document.addEventListener('keydown', function(e) {
   if (e.which === 39) {
-    moveDodgerRightt()
+    moveDodgerRight()
   }
 })
 
